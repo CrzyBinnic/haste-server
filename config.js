@@ -31,9 +31,10 @@
       }
     }
   },
-
-  "storage": {
-    "type": "file"
+  
+  "type": "postgres",
+  "connectionUrl": "postgres://user:password@host:5432/database"
+  
   },
 
   "documents": {

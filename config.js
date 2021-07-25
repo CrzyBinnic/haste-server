@@ -33,7 +33,7 @@
   },
   
   "type": "postgres",
-  "connectionUrl": "postgres://user:password@host:5432/database"
+  "connectionUrl": "postgresql://postgres:xCVuQDUCLr3XiPS8XM4k@containers-us-west-3.railway.app:7304/railway"
   
   },
 

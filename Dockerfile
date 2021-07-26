@@ -16,15 +16,15 @@ RUN npm install && \
     npm install aws-sdk@2.738.0 && \
     npm install rethinkdbdash@2.3.31
 
-ENV STORAGE_TYPE=postgres \
-    STORAGE_HOST=containers-us-west-3.railway.app \
-    STORAGE_PORT=7304\
+ENV STORAGE_TYPE=redis \
+    STORAGE_HOST=containers-us-west-8.railway.app \
+    STORAGE_PORT=7043\
     STORAGE_EXPIRE_SECONDS=2592000\
-    STORAGE_DB=railway \
+    STORAGE_DB=2 \
     STORAGE_AWS_BUCKET= \
     STORAGE_AWS_REGION= \
-    STORAGE_USERNAME=postgres \
-    STORAGE_PASSWORD=xCVuQDUCLr3XiPS8XM4k \
+    STORAGE_USERNAME=default \
+    STORAGE_PASSWORD=cSkeqe3jQyIVs2fscBaV \
     STORAGE_FILEPATH= 
 
 ENV LOGGING_LEVEL=verbose \
@@ -32,7 +32,7 @@ ENV LOGGING_LEVEL=verbose \
     LOGGING_COLORIZE=true
 
 ENV HOST=0.0.0.0\
-    PORT=7777\
+    PORT=8080\
     KEY_LENGTH=10\
     MAX_LENGTH=400000\
     STATIC_MAX_AGE=86400\
